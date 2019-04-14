@@ -1,12 +1,15 @@
 Modul WeblingRelations
 =======================
 
-#### Webling ProcessWire API Schnittstelle
-
+Konfigurierbare Schnittstelle zwischen der Mitgliederverwaltungssoftware Webling und dem CMS/ CMF ProcessWire auf Basis der Webling API.
 
 ## Installation
 
+![Liste von ProcessWire Modulen](screenshots/install-1-general.png)
+
 Bei der Installation des Moduls muß die entsprechende Webling **Subdomain** und ein **API Key** mit entsprechenden Berechtigungen eingerichtet werden.
+
+![Modulkonfigurationsmaske](screenshots/install-2-modul-config.png)
 
 +++
 
@@ -14,7 +17,7 @@ Bei der Installation des Moduls muß die entsprechende Webling **Subdomain** und
 
 ### Relation
 
-**Relation** beschreibt eine Beziehung zwischen einem Webling **Objekttyp** und einem ProcessWire **Template**. z.B. Objektyp 'member' und Template 'user'
+**Relation** beschreibt eine Beziehung zwischen einem Webling **Objekttyp** und einem ProcessWire **Template**. z.B. Objektyp 'member' und Template 'user'.
 
 #### Bedingungen
 + Pro **Objekttyp**, bzw. **Template** kann jeweils **nur eine Relation** erstellt werden.
@@ -22,7 +25,7 @@ Bei der Installation des Moduls muß die entsprechende Webling **Subdomain** und
 
 ### Link
 
-**Link** beschreibt eine Beziehung innerhalb einer Relation zwischen einem Webling **Property** (Feld) und einem ProcessWire **Feld**. Für die Art der Beziehung gibt es **4 Typen**
+**Link** beschreibt eine Beziehung innerhalb einer Relation zwischen einem Webling **Property** (Datenfeld) und einem ProcessWire **Feld**. Für die Art der Beziehung gibt es **4 Typen**:
 
 + **show**  
 Der Inhalt wird aus Webling eingelesen und in der aktuellen ProcessWire Session gespeichert. Das entsprechende ProcessWire Feld bleibt leer oder wird beim nächsten Speichern geleert. Eine Aktualisierung aus Webling erfolgt nach dem Start einer neuer ProcessWire Session, oder, wenn ein Wert in einem Feld vom Typ pull oder push verändert wurde und die Seite gespeichert wurde.
@@ -43,7 +46,7 @@ Zusätzlich besteht die Möglichkeit die ProcessWire Page ID mit einem Webling D
 #### Bedingungen
 + Pro **Property** bzw. **Feld** kann jeweils **nur ein Link** erstellt werden.
 + ProcessWire Felder müssen **access_control** aktiviert haben. Ohne diese Einstellung werden Daten zwar eingelesen und synchronisiert, es werden jedoch keine Zusatzinformationen oder Warnungen ausgegeben.
-+ Bei der Einrichtung muß auf Kompatibilität der Datentypen geachtet werden. z.B. kann für das Feld Email nicht der Linktyp hash gewählt werden, das Format des Hashwertes für verschiedene Felder (z.B:email) bzw. Datentypen (z.B:date) nicht zulässig ist.
++ Bei der Einrichtung muß auf Kompatibilität der Datentypen geachtet werden. z. B. kann für das Feld Email nicht der Linktyp ***hash*** gewählt werden, das Format des Hashwertes für verschiedene ProcessWire Felder (z. B: *email*) bzw. Webling Datentypen (z. B: *date*) nicht zulässig ist.
 
 +++
 
@@ -51,6 +54,14 @@ Zusätzlich besteht die Möglichkeit die ProcessWire Page ID mit einem Webling D
 
 Die Schnittstelle synchronisiert im Hintergrund Daten zwischen ProcessWire und Webling.
 Die Synchronisation wird jeweils durch das Laden des Editierbereichs oder das Speichern einer ProcessWire Seite ausgelöst. Zur Identifizierung muß auf der ProcessWire Seite die eindeutige **Webling-Objekt-ID** im Feld **webling_ID** vorhanden sein.
+
+### Entsprechungen
+
+| Webling | ProcessWire | Identifikatoren |
+|:--|:--|:--|
+| Objekttyp | Template | name &xharr; id |
+| Datenfeld | Feld | id &xharr; id 
+| Objekt| Page | Objekt ID &xharr; Feldwert: *webling_ID* |
 
 <small>_Version: 1.0.0 Datum: 2019-04-13_
 
