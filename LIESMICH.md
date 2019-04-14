@@ -66,7 +66,7 @@ Die Synchronisation wird jeweils durch das Laden des Editierbereichs oder das Sp
 
 ![Setup](screenshots/setup-1-path.png)
 
-![Setup if Apikey is missing](screenshots/setup-2-missing-apikey.png)
+![Setup if Apikey is missing](screenshots/setup-2-missingapikey.png)
 
 ![Overview of relations and links](screenshots/setup-8-full.png)
 

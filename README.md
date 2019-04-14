@@ -60,7 +60,7 @@ The interface synchronizes data between ProcessWire and Webling in the backgroun
 
 ![Setup](screenshots/setup-1-path.png)
 
-![Setup if Apikey is missing](screenshots/setup-2-missing-apikey.png)
+![Setup if Apikey is missing](screenshots/setup-2-missingapikey.png)
 
 ![Overview of relations and links](screenshots/setup-8-full.png)
 
