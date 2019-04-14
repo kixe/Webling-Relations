@@ -1,0 +1,46 @@
+ProcessWire Module Webling Relations
+====================================
+
+
+RIGHTS OF USE
+=============
+
+Use of the software is only permitted in combination with the site(s),
+for which approval by the author was granted.
+It should not be distributed beyond the permitted site you 
+registered it for, except for staging and/or development servers 
+related to the site.
+You can register the software for other sites. To do this, contact the author.
+Christoph Thelen note@qualyweb.com
+
+
+TERMS AND CONDITIONS
+====================
+
+You may not copy or distribute 'Webling Relations', except on site(s) you have registered it 
+for with Christoph Thelen or qualyweb.com. It is okay to make copies for use on staging 
+or development servers specific to the site you registered for. 
+
+Support for this software is limited to 1-year through email.
+In case of module failures or other module errors as a result of ProcessWire system/core updates support is not provided.
+
+In no event shall Christoph Thelen be liable for any special, 
+indirect, consequential, exemplary, or incidental damages whatsoever, including, 
+without limitation, damage for loss of business profits, business interruption, 
+loss of business information, loss of goodwill, or other pecuniary loss whether 
+based in contract, tort, negligence, strict liability, or otherwise, arising out of 
+the use or inability to use 'Webling Relations', even if Christoph Thelen has been advised of the possibility of such damages.
+
+
+'Webling Relations' is provided "AS-IS" without warranty of any kind, either expressed or 
+implied, including, but not limited to, the implied warranties of merchantability and
+fitness for a particular purpose. The entire risk as to the quality and performance
+of the program is with you. Should the program prove defective, you assume the cost 
+of all necessary servicing, repair or correction. Should you run into any trouble with 'Webling Relations', please email for support note@qualyweb.com.
+
+The author reserves the right to provide/implement alternative solutions within the environment (website) in which the module is used.
+
+---
+
+© Copyright 2019 by Christoph Thelen qualyweb.com
+
