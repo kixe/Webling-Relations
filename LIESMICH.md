@@ -1,5 +1,5 @@
-Modul WeblingRelations
-=======================
+Modul Webling Relations
+========================
 
 Konfigurierbare Schnittstelle zwischen der Mitgliederverwaltungssoftware Webling und dem CMS/ CMF ProcessWire auf Basis der Webling API.
 
