@@ -36,7 +36,8 @@ In addition, it is possible to link the ProcessWire Page ID with a Webling data 
 #### Conditions
 + **Only one link** can be created per **property** or **field**.
 + ProcessWire fields must have **access_control** activated. Without this setting, data is read and synchronized, but no additional information or warnings are output.
-+ When setting up, ensure that the data types are compatible. e.g. can not be selected for the field Email the link type ***hash***, the format of the hash value for some ProcessWire fields (e.g. *email*) or Webling data types (e.g. *date*) is not allowed.
++ When setting up, ensure that the data types are compatible.
++ The link type **hash** can not always be selected because the format of the hash value is not allowed for some ProcessWire fields (eg: *email*). In this case, the behavior is the same as when type show is selected.
 
 ## Functionality
 

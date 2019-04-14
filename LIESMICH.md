@@ -40,7 +40,8 @@ Zusätzlich besteht die Möglichkeit die ProcessWire Page ID mit einem Webling D
 #### Bedingungen
 + Pro **Property** bzw. **Feld** kann jeweils **nur ein Link** erstellt werden.
 + ProcessWire Felder müssen **access_control** aktiviert haben. Ohne diese Einstellung werden Daten zwar eingelesen und synchronisiert, es werden jedoch keine Zusatzinformationen oder Warnungen ausgegeben.
-+ Bei der Einrichtung muß auf Kompatibilität der Datentypen geachtet werden. z. B. kann für das Feld Email nicht der Linktyp ***hash*** gewählt werden, das Format des Hashwertes für verschiedene ProcessWire Felder (z. B: *email*) bzw. Webling Datentypen (z. B: *date*) nicht zulässig ist.
++ Bei der Einrichtung muß auf Kompatibilität der Datentypen geachtet werden.\
++ Der Linktyp _**hash**_ kann nicht immer gewählt werden, da das Format des Hashwertes für verschiedene ProcessWire Felder (z. B: *email*) nicht zulässig ist. In diesem Fall entspricht das Verhalten dem Typ _**show**_
 
 
 ## Funktionsweise
