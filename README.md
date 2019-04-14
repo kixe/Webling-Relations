@@ -5,27 +5,12 @@ Configurable interface between the members administration software Webling and t
 
 ## Installation
 
-![List of ProcessWire modules](screenshots/install-1-general.png)
-
 When installing the module, the corresponding Webling **subdomain** and an **API key** must be set up with appropriate authorizations.
-
-![Module config screen](screenshots/install-2-modul-config.png)
-
-+++
 
 ## Configuration
 
-![Setup](screenshots/setup-1-path.png)
-
-![Setup if Apikey is missing](screenshots/setup-2-missing-apikey.png)
-
-![Overview of relations and links](screenshots/setup-8-full.png)
-
 ### Relation
 **Relation** describes a relationship between a Web ling object type and a ProcessWire **template**. e.g. Object type 'member' and template 'user'.
-
-![Overview of relations and links](screenshots/setup-4-relation-create-object.png)
-
 
 #### Conditions
 + Only one relation can be created for each **object type** or **template**.
@@ -33,8 +18,6 @@ When installing the module, the corresponding Webling **subdomain** and an **API
 
 ## Link
 **Link** describes a relationship within a relation between a Webling **property** (datafield) and a ProcessWire **Field**. There are **4 types** of relationships:
-
-![Link types](screenshots/setup-7-link-types.png)
 
 + **show**
 	The content is imported from Webling and saved in the current ProcessWire session. The corresponding ProcessWire field remains empty or will be emptied the next time it is saved. An update from Webbing occurs after the start of a new ProcessWire session, or when a value in a pull or push field has been changed and the page has been saved.
@@ -55,8 +38,6 @@ In addition, it is possible to link the ProcessWire Page ID with a Webling data 
 + ProcessWire fields must have **access_control** activated. Without this setting, data is read and synchronized, but no additional information or warnings are output.
 + When setting up, ensure that the data types are compatible. e.g. can not be selected for the field Email the link type ***hash***, the format of the hash value for some ProcessWire fields (e.g. *email*) or Webling data types (e.g. *date*) is not allowed.
 
-+++
-
 ## Functionality
 
 The interface synchronizes data between ProcessWire and Webling in the background. Synchronization is triggered by loading the page editing area or saving a ProcessWire page. For identification, the unique **Webling object ID** must exist in the field **webling_ID** on the ProcessWire page.
@@ -66,7 +47,23 @@ The interface synchronizes data between ProcessWire and Webling in the backgroun
 | Webling | ProcessWire | Identifiers |
 |:--|:--|:--|
 | Objecttype | Template | name &xharr; id |
-| Property | Field | id &xharr; id 
+| Property | Field | id &xharr; id |
 | Object | Page | object id &xharr; field value: *webling_ID* |
 
 <small>_Version: 1.0.0 Date: 2019-04-13_
+
+## Screenshots
+
+![List of ProcessWire modules](screenshots/install-1-general.png)
+
+![Module config screen](screenshots/install-2-modul-config.png)
+
+![Setup](screenshots/setup-1-path.png)
+
+![Setup if Apikey is missing](screenshots/setup-2-missing-apikey.png)
+
+![Overview of relations and links](screenshots/setup-8-full.png)
+
+![Overview of relations and links](screenshots/setup-4-relation-create-object.png)
+
+![Link types](screenshots/setup-7-link-types.png)

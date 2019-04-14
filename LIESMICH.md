@@ -5,13 +5,7 @@ Konfigurierbare Schnittstelle zwischen der Mitgliederverwaltungssoftware Webling
 
 ## Installation
 
-![Liste von ProcessWire Modulen](screenshots/install-1-general.png)
-
 Bei der Installation des Moduls muß die entsprechende Webling **Subdomain** und ein **API Key** mit entsprechenden Berechtigungen eingerichtet werden.
-
-![Modulkonfigurationsmaske](screenshots/install-2-modul-config.png)
-
-+++
 
 ## Konfiguration
 
@@ -48,7 +42,6 @@ Zusätzlich besteht die Möglichkeit die ProcessWire Page ID mit einem Webling D
 + ProcessWire Felder müssen **access_control** aktiviert haben. Ohne diese Einstellung werden Daten zwar eingelesen und synchronisiert, es werden jedoch keine Zusatzinformationen oder Warnungen ausgegeben.
 + Bei der Einrichtung muß auf Kompatibilität der Datentypen geachtet werden. z. B. kann für das Feld Email nicht der Linktyp ***hash*** gewählt werden, das Format des Hashwertes für verschiedene ProcessWire Felder (z. B: *email*) bzw. Webling Datentypen (z. B: *date*) nicht zulässig ist.
 
-+++
 
 ## Funktionsweise
 
@@ -60,9 +53,25 @@ Die Synchronisation wird jeweils durch das Laden des Editierbereichs oder das Sp
 | Webling | ProcessWire | Identifikatoren |
 |:--|:--|:--|
 | Objekttyp | Template | name &xharr; id |
-| Datenfeld | Feld | id &xharr; id 
+| Datenfeld | Feld | id &xharr; id |
 | Objekt| Page | Objekt ID &xharr; Feldwert: *webling_ID* |
 
 <small>_Version: 1.0.0 Datum: 2019-04-13_
+
+## Screenshots
+
+![List of ProcessWire modules](screenshots/install-1-general.png)
+
+![Module config screen](screenshots/install-2-modul-config.png)
+
+![Setup](screenshots/setup-1-path.png)
+
+![Setup if Apikey is missing](screenshots/setup-2-missing-apikey.png)
+
+![Overview of relations and links](screenshots/setup-8-full.png)
+
+![Overview of relations and links](screenshots/setup-4-relation-create-object.png)
+
+![Link types](screenshots/setup-7-link-types.png)
 
 
