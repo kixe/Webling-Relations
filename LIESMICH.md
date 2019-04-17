@@ -3,6 +3,10 @@ Modul Webling Relations
 
 Konfigurierbare Schnittstelle zwischen der Mitgliederverwaltungssoftware Webling und dem CMS/ CMF ProcessWire auf Basis der Webling API.
 
+Wenn Sie eine Lizenz für dieses Modul erwerben möchten, wenden Sie sich bitte an [qualyweb.com](https://qualyweb.com/de/kontakt/)
+
+
+
 ## Installation
 
 Bei der Installation des Moduls muß die entsprechende Webling **Subdomain** und ein **API Key** mit entsprechenden Berechtigungen eingerichtet werden.
