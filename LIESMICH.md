@@ -32,8 +32,10 @@ Der Inhalt wird aus Webling eingelesen und in der aktuellen ProcessWire Session 
 Der Inhalt wird aus Webling eingelesen und in der aktuellen ProcessWire Session gespeichert. Das entsprechende ProcessWire Feld wird mit einem Hashwert des Originalwertes befüllt. Dies ermöglicht den Webling Wert mit dem ProcessWire Wert zu vergleichen. Bei Inkosistenz wird ein entsprechender Hinweis ausgegeben. Eine Aktualisierung erfolgt wie beim Typ _**show**_. Der tatsächliche Wert wird nicht in der ProcessWire Datenbank gespeichert. Es ist nicht möglich aus den Daten in der ProcessWire Datenbank den tatsächlichen Wert zu ermitteln.
 
 + **pull**  
-Inhalte werden bei jedem Speichern synchronisiert. Die Webling Datenbank ist führend. Beim Öffnen der ProcessWire Page-Edit Seite erscheint der Webling Wert.
-Im Falle von Inkosistenz wird ein Hinweis ausgegeben, dass der Wert aktualisiert wurde.
+Inhalte werden bei jedem Speichern synchronisiert. Die Webling Datenbank ist führend. Beim Öffnen der ProcessWire Page-Edit Seite erscheint der Webling Wert. Es werden keine Hinweise bei Änderung ausgegeben. Die ProcessWire Datenbank wird stillschweigend aktualisiert.
+
++ **sync**  
+Inhalte werden bei jedem Speichern synchronisiert. Die Webling Datenbank ist führend. Beim Öffnen der ProcessWire Page-Edit Seite erscheint der Webling Wert. Im Falle von Inkosistenz wird ein Hinweis ausgegeben, dass der Wert aktualisiert wurde.
 
 + **push**  
 Inhalte werden bei jedem Speichern synchronisiert. Die ProcessWire Datenbank ist führend. Beim Öffnen der ProcessWire Page-Edit Seite wird der ProcessWire Wert geladen.
@@ -44,7 +46,8 @@ Zusätzlich besteht die Möglichkeit die ProcessWire Page ID mit einem Webling D
 #### Bedingungen
 + Pro **Property** bzw. **Feld** kann jeweils **nur ein Link** erstellt werden.
 + ProcessWire Felder müssen **access_control** aktiviert haben. Ohne diese Einstellung werden Daten zwar eingelesen und synchronisiert, es werden jedoch keine Zusatzinformationen oder Warnungen ausgegeben.
-+ Bei der Einrichtung muß auf Kompatibilität der Datentypen geachtet werden.\
++ Ist **access_control** aktiviert sind die Linktypen _**show**_, _**hash**_ und _**pull**_ nicht editierbar.	
++ Bei der Einrichtung muß auf Kompatibilität der Datentypen geachtet werden.
 + Der Linktyp _**hash**_ kann nicht immer gewählt werden, da das Format des Hashwertes für verschiedene ProcessWire Felder (z. B: *email*) nicht zulässig ist. In diesem Fall entspricht das Verhalten dem Typ _**show**_
 
 
@@ -58,10 +61,10 @@ Die Synchronisation wird jeweils durch das Laden des Editierbereichs oder das Sp
 | Webling | ProcessWire | Identifikatoren |
 |:--|:--|:--|
 | Objekttyp | Template | name &xharr; id |
-| Datenfeld | Feld | id &xharr; id |
+| Datenfeld/ Property | Feld | id &xharr; id |
 | Objekt| Page | Objekt ID &xharr; Feldwert: *webling_ID* |
 
-<small>_Version: 1.0.0 Datum: 2019-04-13_
+<small>_Version: 1.0.1 Datum: 2019-04-24_
 
 ## Screenshots
 
