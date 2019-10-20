@@ -58,7 +58,7 @@ The interface synchronizes data between ProcessWire and Webling in the backgroun
 | Property | Field | id &xharr; id |
 | Object | Page | object id &xharr; page field value: *webling_ID* |
 
-<small>_Version: 1.0.1 Date: 2019-04-24_</small>
+<small>_Version: 1.0.5 Date: 2019-10-20_</small>
 
 ### Special Datatypes
 + Select or Multiselect Fields (*enum*, *multienum* types) on the Webling side are linkable with ProcessWire FieldtypeOptions (values connected via **value** or **title**) or PageFields (values connected via **webling_ID**, **title** or **name**)
