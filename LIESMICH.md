@@ -23,7 +23,7 @@ Bei der Installation des Moduls muß die entsprechende Webling **Subdomain** und
 
 ### Link
 
-**Link** beschreibt eine Beziehung innerhalb einer Relation zwischen einem Webling **Property** (Datenfeld) und einem ProcessWire **Feld**. Für die Art der Beziehung gibt es **4 Typen**:
+**Link** beschreibt eine Beziehung innerhalb einer Relation zwischen einem Webling **Property** (Datenfeld) und einem ProcessWire **Feld**. Für die Art der Beziehung gibt es **5 Typen**:
 
 + **show**  
 Der Inhalt wird aus Webling eingelesen und in der aktuellen ProcessWire Session gespeichert. Das entsprechende ProcessWire Feld bleibt leer oder wird beim nächsten Speichern geleert. Eine Aktualisierung aus Webling erfolgt nach dem Start einer neuer ProcessWire Session, oder, wenn ein Wert in einem Feld vom Typ pull oder push verändert wurde und die Seite gespeichert wurde.
